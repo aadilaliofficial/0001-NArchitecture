@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Showcase | NArchitecture</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #0e0e0e;
+            color: #fff;
+            font-family: 'Poppins', sans-serif;
+        }
+        .product-card {
+            background: #1a1a1a;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(255,255,255,0.05);
+            transition: 0.3s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 30px rgba(255,255,255,0.08);
+        }
+        .product-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        .product-info {
+            padding: 20px;
+            flex-grow: 1;
+        }
+        .product-info h5 {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+        .product-info p {
+            font-size: 16px;
+            color: #aaaaaa;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .section-title h6 {
+            color: #aaaaaa;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        .section-title h2 {
+            font-size: 36px;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Product Section -->
+<section class="py-5">
+    <div class="container">
+        <div class="section-title" data-aos="fade-up">
+            <h6>Our Products</h6>
+            <h2>Explore Our Latest Creations</h2>
+        </div>
+        <div class="row">
+            <!-- Product 1 -->
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
+                    <div class="product-card">
+                        <img src="images/int2.jpg" alt="Product 1">
+                        <div class="product-info">
+                        </div>
+                    </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="product-card">
+                    <img src="images/int2.1.jpg" alt="Product 2">
+                    <div class="product-info">
+                    </div>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="product-card">
+                    <img src="images/int2.2.jpg" alt="Product 3">
+                    <div class="product-info">
+                    </div>
+                </div>
+            </div>
+            <div><a href="product-arch.html" style="color: white; text-decoration: none;">BACK</a></div>
+        </div>
+    </div>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+</body>
+</html>
